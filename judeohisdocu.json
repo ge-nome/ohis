@@ -1,0 +1,79 @@
+docu
+1. Get all products
+    Request: {GET}
+    Body: {No body}
+    End point: http://127.0.0.1:8000/api/product
+    Response
+    {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 1,
+                "name": "sponge",
+                "code": "984",
+                "barcode": "2395483745",
+                "price": "29.99",
+                "category": "shoes",
+                "image": "sponge.jpg",
+                "created_at": "2022-08-12T04:17:46.000000Z",
+                "updated_at": "2022-08-12T04:17:46.000000Z"
+            }
+        ],
+        "first_page_url": "http://127.0.0.1:8000/api/product?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://127.0.0.1:8000/api/product?page=1",
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/product?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "next_page_url": null,
+        "path": "http://127.0.0.1:8000/api/product",
+        "per_page": 1,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
+2. Get products by id
+    Request: {GET}
+    Body: {No body}
+    End point: http://127.0.0.1:8000/api/product/{id}
+    Response
+    {
+        "id": 1,
+        "name": "sponge",
+        "code": "984",
+        "barcode": "2395483745",
+        "price": "29.99",
+        "category": "shoes",
+        "image": "sponge.jpg",
+        "created_at": "2022-08-12T04:17:46.000000Z",
+        "updated_at": "2022-08-12T04:17:46.000000Z"
+    }
+3. Get products by id
+    Request: {GET}
+    Body: {No body}
+    End point: http://127.0.0.1:8000/api/product/{id}
+    Response
+    [
+        {
+            "id": 1,
+            "code": "23454",
+            "name": "PPEPPERSOUP",
+            "created_at": "2022-08-12T05:13:00.000000Z",
+            "updated_at": "2022-08-12T05:13:00.000000Z"
+        }
+    ]
